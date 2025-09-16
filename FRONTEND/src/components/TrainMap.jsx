@@ -25,7 +25,7 @@ export default function TrainMap() {
   return (
     <div className="h-[500px] w-full rounded-lg shadow-md border">
       <MapContainer
-        center={[20.5937, 78.9629]} // center on India
+        center={[20.5937, 78.9629]} // India
         zoom={5}
         style={{ height: "100%", width: "100%" }}
       >
@@ -36,7 +36,7 @@ export default function TrainMap() {
         {predictions.map((p, idx) => (
           <Marker
             key={idx}
-            position={[p.lat || 20, p.lon || 78]} // fallback India
+            position={[p.lat || 20, p.lon || 78]} // fallback
             icon={trainIcon}
           >
             <Popup>

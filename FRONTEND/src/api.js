@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// 👇 change this if backend is deployed elsewhere
 const API_BASE = "http://localhost:8000";
 
 export async function uploadSchedule(file) {
